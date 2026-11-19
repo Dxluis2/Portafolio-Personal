@@ -1177,3 +1177,110 @@ button:focus-visible {
         font-size: 17px;
     }
 }
+
+
+
+/* GALERIA AGENDA ESCOLAR MOVIL */
+
+.mobile-gallery {
+    width: 100%;
+    background: #f8faff;
+    border-bottom: 1px solid var(--border);
+}
+
+.mobile-gallery-image {
+    width: 100%;
+    height: 320px;
+    position: relative;
+    padding: 12px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #eef2ff, #e0e7ff);
+}
+
+.mobile-gallery-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    border-radius: 10px;
+}
+
+.mobile-gallery .gallery-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 34px;
+    height: 34px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.95);
+    color: #2563eb;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 5;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+.mobile-gallery .gallery-prev {
+    left: 10px;
+}
+
+.mobile-gallery .gallery-next {
+    right: 10px;
+}
+
+.mobile-gallery .gallery-arrow:hover {
+    background: #dbeafe;
+}
+
+.mobile-gallery .gallery-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 18px 5px;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.mobile-gallery .gallery-info span:last-child {
+    color: var(--primary);
+}
+
+.mobile-gallery .gallery-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 0 15px;
+}
+
+.mobile-gallery .gallery-dots button {
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background: #cbd5e1;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.mobile-gallery .gallery-dots button.active {
+    width: 22px;
+    border-radius: 10px;
+    background: var(--primary);
+}
+
+@media (max-width: 480px) {
+    .mobile-gallery-image {
+        height: 290px;
+    }
+
+    .mobile-gallery .gallery-arrow {
+        width: 30px;
+        height: 30px;
+        font-size: 17px;
+    }
+}

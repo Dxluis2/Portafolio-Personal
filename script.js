@@ -286,3 +286,73 @@ if (imagenPWA && anteriorPWA && siguientePWA) {
 
     mostrarImagenPWA(0);
 }
+
+
+/* GALERIA AGENDA ESCOLAR MOVIL */
+
+const imagenesMovil = [
+    {
+        imagen: "img/movil-inicio-admin.png",
+        titulo: "Panel de administrador"
+    },
+    {
+        imagen: "img/movil-usuarios.png",
+        titulo: "Gestion de usuarios"
+    },
+    {
+        imagen: "img/movil-activaciones-cuenta.png",
+        titulo: "Activaciones de cuenta"
+    },
+    {
+        imagen: "img/movil-vista-alumnos.png",
+        titulo: "Vista de alumnos"
+    }
+];
+
+const imagenMovil = document.getElementById("movil-imagen");
+const tituloMovil = document.getElementById("movil-titulo");
+const contadorMovil = document.getElementById("movil-contador");
+const anteriorMovil = document.getElementById("movil-anterior");
+const siguienteMovil = document.getElementById("movil-siguiente");
+const puntosMovil = document.querySelectorAll("#movil-puntos button");
+
+let indiceMovil = 0;
+
+function mostrarImagenMovil(indice) {
+    if (!imagenMovil || !tituloMovil || !contadorMovil) {
+        return;
+    }
+
+    indiceMovil = (indice + imagenesMovil.length) % imagenesMovil.length;
+
+    const actual = imagenesMovil[indiceMovil];
+
+    imagenMovil.src = actual.imagen;
+    imagenMovil.alt = actual.titulo;
+    tituloMovil.textContent = actual.titulo;
+    contadorMovil.textContent = `${indiceMovil + 1} / ${imagenesMovil.length}`;
+
+    puntosMovil.forEach((punto, i) => {
+        punto.classList.toggle("active", i === indiceMovil);
+        punto.setAttribute("aria-pressed", String(i === indiceMovil));
+    });
+}
+
+if (imagenMovil && anteriorMovil && siguienteMovil) {
+
+    anteriorMovil.addEventListener("click", () => {
+        mostrarImagenMovil(indiceMovil - 1);
+    });
+
+    siguienteMovil.addEventListener("click", () => {
+        mostrarImagenMovil(indiceMovil + 1);
+    });
+
+    puntosMovil.forEach((punto, i) => {
+        punto.addEventListener("click", () => {
+            mostrarImagenMovil(i);
+        });
+    });
+
+    mostrarImagenMovil(0);
+}

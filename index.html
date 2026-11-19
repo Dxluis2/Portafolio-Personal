@@ -502,49 +502,89 @@
                 </div>
             </article>
 
-            <!-- PROYECTO 2: APP NATIVA -->
-            <article class="project-card">
 
-                <div class="project-image project-two">
-                    <div class="project-symbol">📱</div>
-                    <span>APLICACIÓN MÓVIL NATIVA</span>
-                </div>
+<!-- PROYECTO 2: APLICACION MOVIL -->
+<article class="project-card">
 
-                <div class="project-content">
+    <div class="project-gallery mobile-gallery" id="galeria-movil">
 
-                    <span class="project-category">
-                        Desarrollo Móvil
-                    </span>
+        <div class="gallery-image mobile-gallery-image">
 
-                    <h3>Agenda Escolar Móvil</h3>
+            <img
+                src="img/movil-inicio-admin.png"
+                alt="Panel de administrador de la aplicacion movil"
+                id="movil-imagen"
+                loading="lazy"
+            >
 
-                    <p>
-                        Aplicación móvil desarrollada con
-                        React Native y Expo para dispositivos
-                        Android e iOS. Su objetivo es
-                        facilitar la organización de materias,
-                        tareas y actividades escolares,
-                        utilizando Firebase para la
-                        autenticación y almacenamiento
-                        de información.
-                    </p>
+            <button
+                type="button"
+                class="gallery-arrow gallery-prev"
+                id="movil-anterior"
+                aria-label="Imagen anterior">
+                &#10094;
+            </button>
 
-                    <div class="project-technologies">
-                        <span>React Native</span>
-                        <span>Expo</span>
-                        <span>Firebase</span>
-                        <span>JavaScript</span>
-                    </div>
+            <button
+                type="button"
+                class="gallery-arrow gallery-next"
+                id="movil-siguiente"
+                aria-label="Imagen siguiente">
+                &#10095;
+            </button>
 
-                    <a href="https://github.com/Dxluis2/agenda-inteligente"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="project-link">
-                        Ver código en GitHub ↗
-                    </a>
+        </div>
 
-                </div>
-            </article>
+        <div class="gallery-info">
+            <span id="movil-titulo">Panel de administrador</span>
+            <span id="movil-contador">1 / 4</span>
+        </div>
+
+        <div class="gallery-dots" id="movil-puntos">
+            <button type="button" class="active" aria-label="Ver panel de administrador"></button>
+            <button type="button" aria-label="Ver usuarios"></button>
+            <button type="button" aria-label="Ver activaciones de cuenta"></button>
+            <button type="button" aria-label="Ver vista de alumnos"></button>
+        </div>
+
+    </div>
+
+    <div class="project-content">
+
+        <span class="project-category">
+            Desarrollo Movil
+        </span>
+
+        <h3>Agenda Escolar Movil</h3>
+
+        <p>
+            Aplicacion movil desarrollada con React Native,
+            Expo y Firebase. Las capturas muestran
+            diferentes pantallas de la aplicacion,
+            incluyendo un panel de administrador,
+            gestion de usuarios, activaciones de
+            cuentas y una vista para alumnos.
+        </p>
+
+        <div class="project-technologies">
+            <span>React Native</span>
+            <span>Expo</span>
+            <span>Firebase</span>
+            <span>JavaScript</span>
+        </div>
+
+        <a
+            href="https://github.com/Dxluis2/agenda-inteligente"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-link">
+            Ver codigo en GitHub &#8599;
+        </a>
+
+    </div>
+
+</article>
+
 
             <!-- PROYECTO 3: DEVOPS -->
             <article class="project-card">
