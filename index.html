@@ -1,0 +1,606 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio profesional de Jose Luis Ramirez Arellano, estudiante de Ingeniería en Desarrollo y Gestión de Software.">
+    <title>Jose Luis Ramirez | Desarrollador de Software</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar container">
+            <a href="#inicio" class="logo">
+                &lt;JL<span>/</span>&gt;
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle"
+                    aria-label="Abrir menú"
+                    aria-expanded="false"
+                    aria-controls="nav-links">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#estudios">Estudios</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto" class="nav-contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- INICIO -->
+        <section id="inicio" class="hero">
+            <div class="container hero-content">
+
+                <div class="hero-text">
+                    <span class="etiqueta">
+                        PORTAFOLIO DE DESARROLLADOR
+                    </span>
+
+                    <p class="saludo">Hola, soy</p>
+
+                    <h1>
+                        Jose Luis <br>
+                        <span>Ramirez Arellano</span>
+                    </h1>
+
+                    <h2>
+                        Ingeniero en Desarrollo y Gestión de Software
+                    </h2>
+
+                    <p class="hero-description">
+                        Estudiante de Ingeniería en Desarrollo y
+                        Gestión de Software, apasionado por la
+                        programación, el desarrollo web, las
+                        aplicaciones móviles y las nuevas tecnologías.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#proyectos" class="btn btn-primary">
+                            Ver mis proyectos
+                        </a>
+
+                        <a href="#contacto" class="btn btn-outline">
+                            Contáctame
+                        </a>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://github.com/Dxluis2"
+                           target="_blank" rel="noopener noreferrer">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                                 alt="GitHub">
+                            GitHub
+                        </a>
+
+                        <a href="mailto:dxluis6@gmail.com">
+                            ✉ Correo electrónico
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <div class="photo-background">
+                        <img src="img/perfil.jpg"
+                             alt="Fotografía de Jose Luis Ramirez"
+                             class="profile-photo"
+                             onerror="this.style.display='none'">
+                        <div class="photo-placeholder">
+                            JL
+                        </div>
+                    </div>
+
+                    <div class="floating-card card-code">
+                        &lt;/&gt; Software Developer
+                    </div>
+
+                    <div class="floating-card card-tech">
+                        Desarrollo Web & Apps
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SOBRE MI -->
+        <section id="sobre-mi" class="section">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-tag">CONÓCEME</span>
+                    <h2>Sobre <span>mí</span></h2>
+                    <p>
+                        Mi perfil, intereses y objetivos profesionales.
+                    </p>
+                </div>
+
+                <div class="about-grid">
+
+                    <div class="about-text">
+                        <h3>¿Quién soy?</h3>
+
+                        <p>
+                            Mi nombre es Jose Luis Ramirez Arellano.
+                            Actualmente curso el décimo cuatrimestre
+                            de Ingeniería en Desarrollo y Gestión
+                            de Software en la Universidad Tecnológica
+                            Fidel Velázquez.
+                        </p>
+
+                        <p>
+                            Durante mi formación académica he trabajado
+                            con diferentes lenguajes de programación,
+                            bases de datos y herramientas de desarrollo,
+                            realizando proyectos enfocados en solucionar
+                            problemas mediante la tecnología.
+                        </p>
+
+                        <p>
+                            Me interesa continuar fortaleciendo mis
+                            conocimientos en desarrollo de software,
+                            aplicaciones web, aplicaciones móviles,
+                            bases de datos y herramientas DevOps.
+                        </p>
+                    </div>
+
+                    <div class="about-info">
+                        <div class="info-item">
+                            <span>Nombre</span>
+                            <strong>Jose Luis Ramirez Arellano</strong>
+                        </div>
+
+                        <div class="info-item">
+                            <span>Especialidad</span>
+                            <strong>Desarrollo de Software</strong>
+                        </div>
+
+                        <div class="info-item">
+                            <span>Formación</span>
+                            <strong>Ingeniería</strong>
+                        </div>
+
+                        <div class="info-item">
+                            <span>Cuatrimestre</span>
+                            <strong>10.º</strong>
+                        </div>
+
+                        <div class="info-item">
+                            <span>Correo</span>
+                            <strong>dxluis6@gmail.com</strong>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ESTUDIOS -->
+        <section id="estudios" class="section section-alt">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-tag">FORMACIÓN</span>
+                    <h2>Mis <span>estudios</span></h2>
+                    <p>Mi preparación académica.</p>
+                </div>
+
+                <div class="education-card">
+                    <div class="education-icon">🎓</div>
+
+                    <div class="education-content">
+                        <span class="education-status">
+                            En curso
+                        </span>
+
+                        <h3>
+                            Ingeniería en Desarrollo y
+                            Gestión de Software
+                        </h3>
+
+                        <h4>
+                            Universidad Tecnológica Fidel Velázquez
+                        </h4>
+
+                        <p>
+                            Actualmente cursando el décimo cuatrimestre.
+                            Formación enfocada en el diseño, desarrollo,
+                            implementación y gestión de soluciones
+                            tecnológicas.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- HABILIDADES -->
+        <section id="habilidades" class="section">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-tag">STACK TECNOLÓGICO</span>
+                    <h2>Mis <span>habilidades</span></h2>
+                    <p>
+                        Lenguajes, tecnologías, plataformas y bases
+                        de datos que he utilizado en mis proyectos
+                        y actividades académicas.
+                    </p>
+                </div>
+
+                <h3 class="skills-title">
+                    Lenguajes de programación
+                </h3>
+
+                <div class="skills-grid">
+
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java">
+                        <h4>Java</h4>
+                    </div>
+
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript">
+                        <h4>JavaScript</h4>
+                    </div>
+
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="TypeScript">
+                        <h4>TypeScript</h4>
+                    </div>
+
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP">
+                        <h4>PHP</h4>
+                    </div>
+
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python">
+                        <h4>Python</h4>
+                    </div>
+
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML">
+                        <h4>HTML5</h4>
+                    </div>
+
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS">
+                        <h4>CSS3</h4>
+                    </div>
+
+                </div>
+
+                <h3 class="skills-title">
+                    Frameworks y tecnologías
+                </h3>
+
+                <div class="skills-grid">
+
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React">
+                        <h4>React</h4>
+                    </div>
+
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/expo/expo-original.svg" alt="Expo">
+                    <h4>Expo</h4>
+                    </div>
+                    
+
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node.js">
+                        <h4>Node.js</h4>
+                    </div>
+
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React Native">
+                    <h4>React Native</h4>
+                    </div>
+
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" alt="Express">
+                        <h4>Express</h4>
+                    </div>
+
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS">
+                        <h4>Tailwind CSS</h4>
+                    </div>
+
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" alt="Vite">
+                        <h4>Vite</h4>
+                    </div>
+
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" alt="Docker">
+                        <h4>Docker</h4>
+                    </div>
+
+                </div>
+
+                <h3 class="skills-title">
+                    Bases de datos
+                </h3>
+
+                <div class="skills-grid">
+
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL">
+                        <h4>MySQL</h4>
+                    </div>
+
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg" alt="Firebase">
+                        <h4>Firebase</h4>
+                    </div>
+
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" alt="MongoDB">
+                        <h4>MongoDB</h4>
+                    </div>
+
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg" alt="SQL Server">
+                        <h4>SQL Server</h4>
+                    </div>
+
+                </div>
+
+                <h3 class="skills-title">
+                    Herramientas y plataformas
+                </h3>
+
+                <div class="skills-grid">
+
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git">
+                        <h4>Git</h4>
+                    </div>
+
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub">
+                        <h4>GitHub</h4>
+                    </div>
+
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" alt="VS Code">
+                        <h4>VS Code</h4>
+                    </div>
+
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg" alt="Android Studio">
+                        <h4>Android Studio</h4>
+                    </div>
+
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg" alt="GitHub Actions">
+                        <h4>GitHub Actions</h4>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+<!-- PROYECTOS -->
+<section id="proyectos" class="section section-alt">
+    <div class="container">
+
+        <div class="section-heading">
+            <span class="section-tag">MI TRABAJO</span>
+            <h2>Proyectos <span>destacados</span></h2>
+            <p>
+                Proyectos desarrollados durante mi formación
+                académica utilizando diferentes tecnologías.
+            </p>
+        </div>
+
+        <div class="projects-grid">
+
+            <!-- PROYECTO 1: PWA -->
+            <article class="project-card">
+
+                <div class="project-image project-one">
+                    <div class="project-symbol">🌐</div>
+                    <span>APLICACIÓN WEB PWA</span>
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-category">
+                        Desarrollo Web
+                    </span>
+
+                    <h3>Agenda Escolar PWA</h3>
+
+                    <p>
+                        Aplicación web progresiva diseñada para
+                        organizar materias, tareas y actividades
+                        académicas. Permite gestionar fechas
+                        de entrega, consultar actividades y
+                        recibir recordatorios mediante
+                        notificaciones.
+                    </p>
+
+                    <div class="project-technologies">
+                        <span>React</span>
+                        <span>TypeScript</span>
+                        <span>Firebase</span>
+                        <span>Tailwind CSS</span>
+                        <span>Vite</span>
+                    </div>
+
+                    <a href="https://github.com/Dxluis2/Agenda"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="project-link">
+                        Ver código en GitHub ↗
+                    </a>
+
+                </div>
+            </article>
+
+            <!-- PROYECTO 2: APP NATIVA -->
+            <article class="project-card">
+
+                <div class="project-image project-two">
+                    <div class="project-symbol">📱</div>
+                    <span>APLICACIÓN MÓVIL NATIVA</span>
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-category">
+                        Desarrollo Móvil
+                    </span>
+
+                    <h3>Agenda Escolar Móvil</h3>
+
+                    <p>
+                        Aplicación móvil desarrollada con
+                        React Native y Expo para dispositivos
+                        Android e iOS. Su objetivo es
+                        facilitar la organización de materias,
+                        tareas y actividades escolares,
+                        utilizando Firebase para la
+                        autenticación y almacenamiento
+                        de información.
+                    </p>
+
+                    <div class="project-technologies">
+                        <span>React Native</span>
+                        <span>Expo</span>
+                        <span>Firebase</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <a href="https://github.com/Dxluis2/agenda-inteligente"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="project-link">
+                        Ver código en GitHub ↗
+                    </a>
+
+                </div>
+            </article>
+
+            <!-- PROYECTO 3: DEVOPS -->
+            <article class="project-card">
+
+                <div class="project-image project-three">
+                    <div class="project-symbol">🐳</div>
+                    <span>DOCKER Y DEVOPS</span>
+                </div>
+
+                <div class="project-content">
+
+                    <span class="project-category">
+                        DevOps / Backend
+                    </span>
+
+                    <h3>Agenda Escolar DevOps</h3>
+
+                    <p>
+                        Proyecto enfocado en la implementación
+                        de contenedores Docker y automatización
+                        de procesos de desarrollo. Incluye
+                        una API desarrollada con Node.js y
+                        Express, conectada a Redis para
+                        administrar un contador de visitas.
+                    </p>
+
+                    <div class="project-technologies">
+                        <span>Docker</span>
+                        <span>Node.js</span>
+                        <span>Express</span>
+                        <span>Redis</span>
+                        <span>GitHub Actions</span>
+                    </div>
+
+                    <a href="https://github.com/Dxluis2/agendaEscolar-devops"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="project-link">
+                        Ver código en GitHub ↗
+                    </a>
+
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+
+        <!-- CONTACTO -->
+        <section id="contacto" class="section">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-tag">CONTACTO</span>
+                    <h2>Hablemos de <span>tecnología</span></h2>
+                    <p>
+                        Puedes conocer más sobre mis proyectos
+                        o contactarme mediante los siguientes medios.
+                    </p>
+                </div>
+
+                <div class="contact-box">
+                    <div class="contact-icon">✉</div>
+
+                    <h3>¿Quieres contactarme?</h3>
+
+                    <p>
+                        Estoy interesado en continuar aprendiendo,
+                        desarrollar nuevas habilidades y participar
+                        en proyectos de software.
+                    </p>
+
+                    <a href="mailto:dxluis6@gmail.com"
+                       class="btn btn-primary">
+                        Enviar correo
+                    </a>
+
+                    <a href="https://github.com/Dxluis2"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="btn btn-outline">
+                        Visitar GitHub
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>
+                © <span id="year"></span>
+                Jose Luis Ramirez Arellano.
+            </p>
+
+            <p>
+                Portafolio de Desarrollo de Software
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
