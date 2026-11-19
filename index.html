@@ -586,48 +586,91 @@
 </article>
 
 
-            <!-- PROYECTO 3: DEVOPS -->
-            <article class="project-card">
 
-                <div class="project-image project-three">
-                    <div class="project-symbol">🐳</div>
-                    <span>DOCKER Y DEVOPS</span>
-                </div>
 
-                <div class="project-content">
+<!-- PROYECTO 3: CATALOGO DIGITAL DE PROCESOS -->
+<article class="project-card">
 
-                    <span class="project-category">
-                        DevOps / Backend
-                    </span>
+    <div class="project-gallery" id="galeria-catalogo">
 
-                    <h3>Agenda Escolar DevOps</h3>
+        <div class="gallery-image">
 
-                    <p>
-                        Proyecto enfocado en la implementación
-                        de contenedores Docker y automatización
-                        de procesos de desarrollo. Incluye
-                        una API desarrollada con Node.js y
-                        Express, conectada a Redis para
-                        administrar un contador de visitas.
-                    </p>
+            <img
+                src="img/catalogo-inicio.png"
+                alt="Pantalla de inicio del catalogo"
+                id="catalogo-imagen"
+                loading="lazy"
+            >
 
-                    <div class="project-technologies">
-                        <span>Docker</span>
-                        <span>Node.js</span>
-                        <span>Express</span>
-                        <span>Redis</span>
-                        <span>GitHub Actions</span>
-                    </div>
+            <button type="button"
+                class="gallery-arrow gallery-prev"
+                id="catalogo-anterior"
+                aria-label="Imagen anterior">
+                &#10094;
+            </button>
 
-                    <a href="https://github.com/Dxluis2/agendaEscolar-devops"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="project-link">
-                        Ver código en GitHub ↗
-                    </a>
+            <button type="button"
+                class="gallery-arrow gallery-next"
+                id="catalogo-siguiente"
+                aria-label="Imagen siguiente">
+                &#10095;
+            </button>
 
-                </div>
-            </article>
+        </div>
+
+        <div class="gallery-info">
+            <span id="catalogo-titulo">Pantalla de inicio</span>
+            <span id="catalogo-contador">1 / 4</span>
+        </div>
+
+        <div class="gallery-dots" id="catalogo-puntos">
+            <button type="button" class="active" aria-label="Ver inicio"></button>
+            <button type="button" aria-label="Ver procesos"></button>
+            <button type="button" aria-label="Ver formulario"></button>
+            <button type="button" aria-label="Ver nosotros"></button>
+        </div>
+
+    </div>
+
+    <div class="project-content">
+
+        <span class="project-category">
+            Practicas Profesionales
+        </span>
+
+        <h3>Catálogo Digital de Procesos</h3>
+
+        <p>
+            Sistema web desarrollado durante mis prácticas
+            profesionales para organizar y consultar procesos
+            de control de calidad de diferentes equipos.
+
+            Cuenta con categorías, administración de registros,
+            autenticación de usuarios y contenido multimedia
+            para facilitar la consulta de procedimientos.
+        </p>
+
+        <div class="project-technologies">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>PHP</span>
+            <span>MySQL</span>
+        </div>
+
+        <a
+            href="https://github.com/Dxluis2/Catalogo-Digital-Procesos"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-link">
+            Ver código en GitHub &#8599;
+        </a>
+
+    </div>
+
+</article>
+
+
 
         </div>
     </div>

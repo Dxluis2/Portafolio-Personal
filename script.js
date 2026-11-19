@@ -356,3 +356,72 @@ if (imagenMovil && anteriorMovil && siguienteMovil) {
 
     mostrarImagenMovil(0);
 }
+
+/* GALERIA CATALOGO DIGITAL DE PROCESOS */
+
+const imagenesCatalogo = [
+    {
+        imagen: "img/catalogo-inicio.png",
+        titulo: "Pantalla de inicio"
+    },
+    {
+        imagen: "img/catalogo-procesos.png",
+        titulo: "Catalogo de procesos"
+    },
+    {
+        imagen: "img/catalogo-Formulario.png",
+        titulo: "Formulario de registro"
+    },
+    {
+        imagen: "img/catalogo-nosotros.png",
+        titulo: "Seccion Nosotros"
+    }
+];
+
+const imagenCatalogo = document.getElementById("catalogo-imagen");
+const tituloCatalogo = document.getElementById("catalogo-titulo");
+const contadorCatalogo = document.getElementById("catalogo-contador");
+const anteriorCatalogo = document.getElementById("catalogo-anterior");
+const siguienteCatalogo = document.getElementById("catalogo-siguiente");
+const puntosCatalogo = document.querySelectorAll("#catalogo-puntos button");
+
+let indiceCatalogo = 0;
+
+function mostrarImagenCatalogo(indice) {
+
+    indiceCatalogo =
+        (indice + imagenesCatalogo.length) % imagenesCatalogo.length;
+
+    const actual = imagenesCatalogo[indiceCatalogo];
+
+    imagenCatalogo.src = actual.imagen;
+    imagenCatalogo.alt = actual.titulo;
+    tituloCatalogo.textContent = actual.titulo;
+
+    contadorCatalogo.textContent =
+        `${indiceCatalogo + 1} / ${imagenesCatalogo.length}`;
+
+    puntosCatalogo.forEach((punto, i) => {
+        punto.classList.toggle("active", i === indiceCatalogo);
+        punto.setAttribute("aria-pressed", String(i === indiceCatalogo));
+    });
+}
+
+if (imagenCatalogo && anteriorCatalogo && siguienteCatalogo) {
+
+    anteriorCatalogo.addEventListener("click", () => {
+        mostrarImagenCatalogo(indiceCatalogo - 1);
+    });
+
+    siguienteCatalogo.addEventListener("click", () => {
+        mostrarImagenCatalogo(indiceCatalogo + 1);
+    });
+
+    puntosCatalogo.forEach((punto, i) => {
+        punto.addEventListener("click", () => {
+            mostrarImagenCatalogo(i);
+        });
+    });
+
+    mostrarImagenCatalogo(0);
+}
