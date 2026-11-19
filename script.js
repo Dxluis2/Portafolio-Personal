@@ -425,3 +425,54 @@ if (imagenCatalogo && anteriorCatalogo && siguienteCatalogo) {
 
     mostrarImagenCatalogo(0);
 }
+
+/* PORCENTAJES DE HABILIDADES */
+
+const tarjetasHabilidades = document.querySelectorAll(".skill-logo-card");
+
+tarjetasHabilidades.forEach((tarjeta) => {
+
+    const porcentaje = Math.max(
+        0,
+        Math.min(100, Number(tarjeta.dataset.percent) || 0)
+    );
+
+    tarjeta.style.setProperty("--nivel", porcentaje + "%");
+
+    tarjeta.setAttribute("tabindex", "0");
+    tarjeta.setAttribute("role", "button");
+    tarjeta.setAttribute("aria-label",
+        tarjeta.innerText.trim() + ": " + porcentaje + "% de experiencia aproximada"
+    );
+
+    const capa = document.createElement("div");
+    capa.className = "skill-hover";
+
+    capa.innerHTML = `
+        <strong>${porcentaje}%</strong>
+        <small>Nivel de conocimiento</small>
+        <div class="skill-barra">
+            <div class="skill-relleno"></div>
+        </div>
+    `;
+
+    tarjeta.appendChild(capa);
+
+    tarjeta.addEventListener("click", () => {
+        const estabaActiva = tarjeta.classList.contains("is-active");
+
+        tarjetasHabilidades.forEach((otra) => {
+            otra.classList.remove("is-active");
+        });
+
+        tarjeta.classList.toggle("is-active", !estabaActiva);
+    });
+
+    tarjeta.addEventListener("keydown", (evento) => {
+        if (evento.key === "Enter" || evento.key === " ") {
+            evento.preventDefault();
+            tarjeta.click();
+        }
+    });
+
+});
