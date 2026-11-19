@@ -415,10 +415,48 @@
             <!-- PROYECTO 1: PWA -->
             <article class="project-card">
 
-                <div class="project-image project-one">
-                    <div class="project-symbol">🌐</div>
-                    <span>APLICACIÓN WEB PWA</span>
-                </div>
+                
+<div class="project-gallery" id="galeria-pwa">
+
+    <div class="gallery-image">
+        <img
+            src="img/agenda-pwa.png"
+            alt="Pantalla de inicio de Agenda Escolar PWA"
+            id="pwa-imagen"
+            loading="lazy"
+        >
+
+        <button
+            type="button"
+            class="gallery-arrow gallery-prev"
+            id="pwa-anterior"
+            aria-label="Imagen anterior">
+            &#10094;
+        </button>
+
+        <button
+            type="button"
+            class="gallery-arrow gallery-next"
+            id="pwa-siguiente"
+            aria-label="Imagen siguiente">
+            &#10095;
+        </button>
+    </div>
+
+    <div class="gallery-info">
+        <span id="pwa-titulo">Panel de inicio</span>
+        <span id="pwa-contador">1 / 4</span>
+    </div>
+
+    <div class="gallery-dots" id="pwa-puntos">
+        <button type="button" class="active" aria-label="Ver inicio"></button>
+        <button type="button" aria-label="Ver tareas"></button>
+        <button type="button" aria-label="Ver materias"></button>
+        <button type="button" aria-label="Ver calendario"></button>
+    </div>
+
+</div>
+
 
                 <div class="project-content">
 
@@ -429,12 +467,21 @@
                     <h3>Agenda Escolar PWA</h3>
 
                     <p>
-                        Aplicación web progresiva diseñada para
-                        organizar materias, tareas y actividades
-                        académicas. Permite gestionar fechas
-                        de entrega, consultar actividades y
-                        recibir recordatorios mediante
-                        notificaciones.
+                        
+<p>
+    Aplicación Web Progresiva (PWA) desarrollada para
+    facilitar la organización académica de estudiantes.
+    Cuenta con un panel de control que permite
+    visualizar materias registradas, tareas pendientes,
+    actividades completadas y próximas fechas de entrega.
+
+    Integra administración de materias, calendario,
+    gestión de tareas y recordatorios mediante
+    notificaciones. Utiliza React, TypeScript y Firebase
+    para ofrecer una experiencia moderna y accesible
+    desde el navegador.
+</p>
+
                     </p>
 
                     <div class="project-technologies">

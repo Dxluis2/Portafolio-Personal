@@ -222,3 +222,67 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
+
+/* GALERIA AGENDA ESCOLAR PWA */
+
+const imagenesPWA = [
+    {
+        imagen: "img/agenda-pwa.png",
+        titulo: "Panel de inicio"
+    },
+    {
+        imagen: "img/agenda-tareas.png",
+        titulo: "Gestion de tareas"
+    },
+    {
+        imagen: "img/agenda-materias.png",
+        titulo: "Administracion de materias"
+    },
+    {
+        imagen: "img/agenda-calendario.png",
+        titulo: "Calendario de actividades"
+    }
+];
+
+const imagenPWA = document.getElementById("pwa-imagen");
+const tituloPWA = document.getElementById("pwa-titulo");
+const contadorPWA = document.getElementById("pwa-contador");
+const anteriorPWA = document.getElementById("pwa-anterior");
+const siguientePWA = document.getElementById("pwa-siguiente");
+const puntosPWA = document.querySelectorAll("#pwa-puntos button");
+
+let indicePWA = 0;
+
+function mostrarImagenPWA(indice) {
+    indicePWA = (indice + imagenesPWA.length) % imagenesPWA.length;
+
+    const actual = imagenesPWA[indicePWA];
+
+    imagenPWA.src = actual.imagen;
+    imagenPWA.alt = actual.titulo;
+    tituloPWA.textContent = actual.titulo;
+    contadorPWA.textContent = `${indicePWA + 1} / ${imagenesPWA.length}`;
+
+    puntosPWA.forEach((punto, i) => {
+        punto.classList.toggle("active", i === indicePWA);
+        punto.setAttribute("aria-pressed", String(i === indicePWA));
+    });
+}
+
+if (imagenPWA && anteriorPWA && siguientePWA) {
+    anteriorPWA.addEventListener("click", () => {
+        mostrarImagenPWA(indicePWA - 1);
+    });
+
+    siguientePWA.addEventListener("click", () => {
+        mostrarImagenPWA(indicePWA + 1);
+    });
+
+    puntosPWA.forEach((punto, i) => {
+        punto.addEventListener("click", () => {
+            mostrarImagenPWA(i);
+        });
+    });
+
+    mostrarImagenPWA(0);
+}
